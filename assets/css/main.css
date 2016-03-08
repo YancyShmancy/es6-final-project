@@ -1,0 +1,55 @@
+* {
+  box-sizing: border-box; }
+
+body {
+  margin: 0;
+  background-color: black;
+  color: #fff; }
+
+h1 {
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-family: helvetica;
+  font-weight: 100;
+  letter-spacing: 2px;
+  padding: 40px 0; }
+
+#myChart {
+  width: 800px;
+  height: 400px;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translateX(-55%) translateY(0%); }
+
+.caption-container {
+  width: 800px;
+  height: 50px;
+  position: relative;
+  float: left;
+  left: 50%;
+  transform: translateX(-50%); }
+  .caption-container p {
+    font-family: helvetica;
+    font-size: 0.7em;
+    font-weight: 200;
+    float: left;
+    width: 123px;
+    margin-right: 10px;
+    text-align: center; }
+    .caption-container p:nth-of-type(6) {
+      margin-right: 0; }
+
+rect {
+  transform-origin: bottom; }
+
+.bar {
+  display: inline-block;
+  width: 20px;
+  height: 75px;
+  background-color: teal; }
+
+.hide {
+  display: none;
+  opacity: 0; }
