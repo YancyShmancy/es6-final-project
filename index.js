@@ -1,12 +1,14 @@
-var hide = function() {
-    $(this).addClass("hide");
-};
+//var charts = require('chart.js');
 
 var dataset = [ 40, 26, 9, 5, 3, 2 ];
+
+var myChart = document.getElementById("#myChart");
 
 var w = $('#myChart').width();
 var h = $('#myChart').height();
 var barPadding = 10;
+
+var newChart = new BarGraph(myChart, w, h).setup("rect", dataset, barPadding, 2000);
 
 var svg = d3.select("#myChart")
             .append("svg")
